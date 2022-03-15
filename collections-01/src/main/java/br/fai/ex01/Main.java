@@ -29,7 +29,12 @@ public class Main {
 		valoresDigitados.add("Item adicionado automaticamente 01");
 		valoresDigitados.add("Item adicionado automaticamente 02");
 		
-		exibeValores(valoresDigitados);		
+		exibeValores(valoresDigitados);
+		
+		valoresDigitados.remove(2);
+		valoresDigitados.remove(2);
+		
+		exibeValores(valoresDigitados);
 	}
 	
 	private String obterDados() {
@@ -45,6 +50,7 @@ public class Main {
 	}
 	
 	private void exibeValores(List<String> lista) {
+		System.out.println("\n\nExibindo valores da lista.");
 		for (String valor: lista) {
 			System.out.println(valor);
 		}
