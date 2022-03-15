@@ -26,6 +26,10 @@ public class Main {
 			}
 		}
 		
+		valoresDigitados.add("Item adicionado automaticamente 01");
+		valoresDigitados.add("Item adicionado automaticamente 02");
+		
+		exibeValores(valoresDigitados);		
 	}
 	
 	private String obterDados() {
@@ -38,5 +42,11 @@ public class Main {
 		}
 		
 		return valor;
+	}
+	
+	private void exibeValores(List<String> lista) {
+		for (String valor: lista) {
+			System.out.println(valor);
+		}
 	}
 }
