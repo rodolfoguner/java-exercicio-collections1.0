@@ -21,6 +21,11 @@ public class Main {
 		
 		exibeValorEspecifico(cidades, "ZORO");
 		exibeValorEspecifico(cidades, "MG");
+		
+		cidades.replace("SRS", "Santa Rita");
+		
+		exibeMapa(cidades);
+		
 	}
 	
 	private void exibeMapa(Map<String, String> cidades) {
