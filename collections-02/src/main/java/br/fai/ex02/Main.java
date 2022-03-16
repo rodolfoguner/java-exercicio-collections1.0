@@ -18,17 +18,24 @@ public class Main {
 		cidades.put("CAXU", "Cachoeira de Minas");
 		
 		exibeMapa(cidades);
+		
+		exibeValorEspecifico(cidades, "ZORO");
+		exibeValorEspecifico(cidades, "MG");
 	}
 	
 	private void exibeMapa(Map<String, String> cidades) {
 		for (String keys: cidades.keySet()) {
-			try {
-			System.out.println("Key: " + keys + ", Valor: " + cidades.get(keys));
-			} catch (Exception e) {
-				System.out.println("Chave " + keys + " não existe");
-			} finally {
-				System.out.println("");
-			}
+			exibeValorEspecifico(cidades, keys);
 		}		
+	}
+	
+	private void exibeValorEspecifico(Map<String, String> cidades, String chave) {
+		try {
+			System.out.println("Valor da chave " + chave + " é " + cidades.get(chave));
+		} catch (Exception e){
+			System.out.println("Chave " + chave + " não existe");
+		} finally {
+			System.out.println();
+		}
 	}
 }
