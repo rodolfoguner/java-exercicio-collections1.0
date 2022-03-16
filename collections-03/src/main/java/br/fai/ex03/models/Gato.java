@@ -6,8 +6,9 @@ public class Gato extends Animal {
 		this.setCor("branco");
 	}
 	
-	public Gato (String cor, int idade, String nome) {
-		super(cor, idade, nome);
+	public Gato (String cor) {
+		super();
+		this.setCor(cor);
 	}
 	
 	@Override
