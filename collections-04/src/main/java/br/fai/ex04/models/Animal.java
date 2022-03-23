@@ -1,6 +1,6 @@
 package br.fai.ex04.models;
 
-abstract class Animal {
+public abstract class Animal {
 	private String cor;
 	private int idade;
 	private String nome;
